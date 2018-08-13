@@ -11,3 +11,26 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+
+# From: http://zanshin.net/2013/02/02/zsh-configuration-from-the-ground-up/
+
+[[ -s ~/.zsh/checks ]]               && source ~/.zsh/checks
+#[[ -s ~/.zsh/colors ]]              && source ~/.zsh/colors
+[[ -s ~/.zsh/setopt ]]               && source ~/.zsh/setopt
+[[ -s ~/.zsh/exports ]]              && source ~/.zsh/exports
+[[ -s ~/.secrets/.zsh/exports ]]     && source ~/.secrets/.zsh/exports
+#[[ -s ~/.zsh/prompt ]]              && source ~/.zsh/prompt
+#[[ -s ~/.zsh/completion ]]          && source ~/.zsh/completion
+[[ -s ~/.zsh/aliases ]]              && source ~/.zsh/aliases
+#[[ -s ~/.zsh/bindkeys ]]            && source ~/.zsh/bindkeys
+#[[ -s ~/.zsh/functions ]]           && source ~/.zsh/functions
+#[[ -s ~/.zsh/history ]]             && source ~/.zsh/history
+#[[ -s ~/.zsh/zsh_hooks ]]           && source ~/.zsh/zsh_hooks
+#source ~/.dotfiles/z/z.sh  ## https://github.com/rupa/z
+
+
+# From: http://joshsymonds.com/blog/2014/06/12/shell-awesomeness-with-prezto/
+
+# Add homebrew to the completion path
+fpath=("/usr/local/bin/" $fpath)
