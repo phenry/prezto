@@ -24,10 +24,14 @@ fi
 #[[ -s ~/.zsh/completion ]]          && source ~/.zsh/completion
 [[ -s ~/.zsh/aliases ]]              && source ~/.zsh/aliases
 #[[ -s ~/.zsh/bindkeys ]]            && source ~/.zsh/bindkeys
-#[[ -s ~/.zsh/functions ]]           && source ~/.zsh/functions
+[[ -s ~/.zsh/functions ]]           && source ~/.zsh/functions
 #[[ -s ~/.zsh/history ]]             && source ~/.zsh/history
 #[[ -s ~/.zsh/zsh_hooks ]]           && source ~/.zsh/zsh_hooks
 #source ~/.dotfiles/z/z.sh  ## https://github.com/rupa/z
+
+# https://cloud.google.com/sdk/docs/quickstarts
+[[ -s /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc ]] && source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+[[ -s /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc ]] && source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
 
 
 # brew install zsh zsh-completions
